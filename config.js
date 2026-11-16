@@ -34,20 +34,20 @@ const WEDDING_CONFIG = {
   },
 
   ceremony: {
-    time: "10:00",
-    title: "LỄ VU QUY",
-    //title: "LỄ THÀNH HÔN",
-    subtitle: "ĐƯỢC CỬ HÀNH TẠI TƯ GIA"
+    time: "12:00",
+    //title: "LỄ VU QUY",
+    title: "LỄ THÀNH HÔN",
+    subtitle: "ĐƯỢC CỬ HÀNH TẠI NHÀ VĂN HÓA"
   },
 
   reception: {
     guestTime: "16:00",
     startTime: "16:30",
-    venue: "Tại tư gia nhà gái",
+    venue: "Tại nhà văn hóa thôn",
     address: "Thôn Kim Thượng, xã Đa Phúc, thành phố Hà Nội",
     // Tọa độ chính xác vị trí tiệc (lấy từ Google Maps) — bản đồ ghim đúng tới từng mét
-    coords: "21.20309, 105.9061",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=21.20309%2C%20105.9061"
+    coords: "21.204649, 105.906593",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=21.204649%2C%20105.906593"
   },
 
   family: {
@@ -119,7 +119,7 @@ const WEDDING_CONFIG = {
      Để trống "" → web chạy chế độ demo: dữ liệu chỉ lưu trên trình duyệt
      của khách, KHÔNG có nơi tổng hợp. Nhớ điền trước khi deploy thật!
      ====================================================================== */
-  appsScriptUrl: "https://script.google.com/macros/s/AKfycbx2jQ-QMgXBGfOWlhefaRp1gZr3tGMrsuiaxdAuwaI2s76SprLYqgbAJU6TF0Oimuur/exec",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbz5i0THCjK2F0tNXLl1Icsxgj9WaFMqaYUMfGJ-cyZCC2aH0S1u88FXDrQXlFyra8tF/exec",
 
   music: {
     enabled: true,
