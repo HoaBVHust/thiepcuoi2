@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <title>Hoài An & Bùi Hòa — 29.11.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=EB+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="page-loader" id="loader"><span>Hoài An &amp; Bùi Hòa</span></div>
+
+  <div class="music-control" id="musicControl" aria-label="Bật tắt nhạc">
+    <span class="music-icon">♪</span>
+    <span class="music-bars"><i></i><i></i><i></i><i></i></span>
+  </div>
+  <audio id="weddingMusic" loop preload="metadata"></audio>
+
+  <div class="floral floral-a" data-speed="0.12"></div>
+  <div class="floral floral-b" data-speed="-0.08"></div>
+  <div class="floral floral-c" data-speed="0.06"></div>
+
+  <section class="cover" id="cover">
+    <div class="stars" aria-hidden="true">
+      <i style="left:6%;top:16%;--t:3.1s;--d:.3s"></i>
+      <i style="left:14%;top:64%;--t:2.6s;--d:1.1s"></i>
+      <i style="left:22%;top:30%;--t:3.6s;--d:.7s"></i>
+      <i style="left:31%;top:74%;--t:2.9s;--d:1.8s"></i>
+      <i style="left:40%;top:12%;--t:3.3s;--d:.1s"></i>
+      <i style="left:52%;top:22%;--t:2.7s;--d:2.2s"></i>
+      <i style="left:61%;top:68%;--t:3.8s;--d:.9s"></i>
+      <i style="left:70%;top:36%;--t:2.8s;--d:1.4s"></i>
+      <i style="left:79%;top:16%;--t:3.4s;--d:.5s"></i>
+      <i style="left:88%;top:56%;--t:2.5s;--d:2s"></i>
+      <i style="left:94%;top:28%;--t:3.2s;--d:1.6s"></i>
+      <i class="shooting-star" style="--sd:2.5s"></i>
+    </div>
+    <div class="cover-flower cover-flower-left"></div>
+    <div class="cover-flower cover-flower-right"></div>
+    <div class="petals" aria-hidden="true">
+      <i class="petal" style="--x:8%;--delay:0s;--t:16s;--k:1"></i>
+      <i class="petal" style="--x:22%;--delay:4s;--t:19s;--k:.8"></i>
+      <i class="petal" style="--x:38%;--delay:9s;--t:14s;--k:1.15"></i>
+      <i class="petal" style="--x:55%;--delay:2s;--t:18s;--k:.9"></i>
+      <i class="petal" style="--x:70%;--delay:7s;--t:15s;--k:1.05"></i>
+      <i class="petal" style="--x:84%;--delay:11s;--t:20s;--k:.75"></i>
+      <i class="petal" style="--x:93%;--delay:5s;--t:17s;--k:1.1"></i>
+    </div>
+    <div class="cover-inner">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h1><span id="coverBride">Hoài An</span><b>&amp;</b><span id="coverGroom">Bùi Hòa</span></h1>
+      <div class="ornament">❦</div>
+      <p class="cover-date" id="coverDate">29 tháng 11, 2026</p>
+      <button class="open-btn" id="openInvitation">MỞ THIỆP</button>
+    </div>
+  </section>
+
+  <main id="invitation" class="invitation">
+    <section class="hero section reveal">
+      <div class="hero-flower hero-flower-top"></div>
+      <div class="hero-content">       
+        <h2><span id="heroBride">Hoài An</span><small>&amp;</small><span id="heroGroom">Bùi Hòa</span></h2>
+	<p class="eyebrow">TRÂN TRỌNG KÍNH MỜI</p>
+        <div class="thin-line"></div>
+        <p>đến chung vui trong ngày trọng đại của chúng tôi</p>
+        <figure class="hero-photo reveal" id="heroPhoto">
+          <img id="heroPhotoImg" alt="Hoài An &amp; Bùi Hòa">
+        </figure>
+        <div class="date-card">
+          <span id="heroDay">CHỦ NHẬT</span>
+          <strong id="heroDayNumber">29</strong>
+          <span id="heroMonth">THÁNG 11</span>
+          <em id="heroYear">2026</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="couple section reveal">
+      <div class="section-heading">
+        <span>OUR STORY</span>
+        <h3>Hai chúng tôi</h3>
+      </div>
+      <div class="couple-grid">
+        <article class="person person-groom">
+          <div class="portrait placeholder" id="groomPortrait"></div>
+          <span class="role">CHÚ RỂ</span>
+          <h3 id="coupleGroom">Bùi Hòa</h3>
+        </article>
+        <div class="amp">&amp;</div>
+        <article class="person person-bride">
+          <div class="portrait placeholder" id="bridePortrait"></div>
+          <span class="role">CÔ DÂU</span>
+          <h3 id="coupleBride">Hoài An</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="families section reveal">
+      <div class="section-heading"><span>FAMILY</span><h3>Thông tin hai gia đình</h3></div>
+      <div class="family-grid">
+        <div class="family-card">
+          <p class="family-title" id="groomFamilyTitle"></p>
+          <h4 id="groomParents"></h4>
+          <p id="groomAddress"></p>
+        </div>
+        <div class="family-card">
+          <p class="family-title" id="brideFamilyTitle"></p>
+          <h4 id="brideParents"></h4>
+          <p id="brideAddress"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reception section reveal">
+      <div class="section-heading"><span>RECEPTION</span><h3>Thông tin tiệc cưới</h3></div>
+      <p>Tiệc cưới sẽ diễn ra vào lúc</p>
+      <div class="reception-time"><strong id="receptionTime"></strong><span id="receptionDay"></span></div>
+      <div class="mini-date"><b id="receptionDayName"></b><strong id="receptionDayNumber"></strong><b id="receptionMonth"></b><b id="receptionYear"></b></div>
+      <div class="reception-meta"><span>ĐÓN KHÁCH <b id="guestTime"></b></span><span>KHAI TIỆC <b id="startTime"></b></span></div>
+    </section>
+
+    <section class="ceremony section reveal">
+      <div class="section-heading"><span>THE CEREMONY</span><h3>Thông tin lễ cưới</h3></div>
+      <p class="invitation-line">TRÂN TRỌNG THÔNG BÁO LỄ VU QUY CỦA CON CHÚNG TÔI</p>
+
+      <h2 class="names-line"><span id="ceremonyGroom"></span> <b>&amp;</b> <span id="ceremonyBride"></span></h2>
+      <p class="ceremony-subtitle" id="ceremonySubtitle"></p>
+      <div class="ceremony-time" id="ceremonyTime"></div>
+      <div class="mini-date"><b id="ceremonyDay"></b><strong id="ceremonyDayNumber"></strong><b id="ceremonyMonth"></b><b id="ceremonyYear"></b></div>
+      <p id="ceremonyLunar" class="lunar"></p>
+    </section>
+
+    <section class="album section reveal">
+      <div class="section-heading"><span>MEMORIES</span><h3>Album Ảnh</h3></div>
+      <div class="gallery" id="gallery"></div>
+      <div class="gallery-counter" id="galleryCounter"></div>
+      <button class="gal-nav gal-prev" id="galPrev" type="button" aria-label="Ảnh trước">‹</button>
+      <button class="gal-nav gal-next" id="galNext" type="button" aria-label="Ảnh sau">›</button>
+    </section>
+
+    <section class="countdown section reveal">
+      <div class="section-heading"><span>COUNTDOWN</span><h3>Cùng đếm ngược</h3></div>
+      <div class="count-grid">
+        <div><strong id="days">00</strong><span>Ngày</span></div>
+        <div><strong id="hours">00</strong><span>Giờ</span></div>
+        <div><strong id="minutes">00</strong><span>Phút</span></div>
+        <div><strong id="seconds">00</strong><span>Giây</span></div>
+      </div>
+    </section>
+
+    <section class="calendar section reveal">
+      <div class="section-heading"><span>WEDDING DAY</span><h3 id="calendarTitle">Tháng 11 / 2026</h3></div>
+      <div class="calendar-box" id="calendar"></div>
+      <a class="calendar-link" id="calendarLink" target="_blank" rel="noopener">＋ Thêm vào lịch</a>
+    </section>
+
+    <section class="rsvp section reveal">
+      <div class="section-heading"><span>RSVP</span><h3>Xác nhận tham dự</h3></div>
+      <form id="rsvpForm" class="form-card">
+        <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input required name="name" placeholder="Tên của bạn *">
+        <select name="attendance"><option value="yes">Tôi sẽ tham dự</option><option value="no">Tôi không thể tham dự</option></select>
+        <input name="guests" type="number" min="1" value="1" placeholder="Số người">
+        <textarea name="note" rows="3" placeholder="Lời nhắn"></textarea>
+        <button type="submit">GỬI XÁC NHẬN</button>
+      </form>
+      <p class="local-note" id="rsvpNote"></p>
+      <p class="rsvp-stats" id="rsvpStats"></p>
+    </section>
+
+    <section class="venue section reveal">
+      <div class="section-heading"><span>THE VENUE</span><h3>Tiệc cưới sẽ tổ chức tại</h3></div>
+      <h3 id="venueName"></h3>
+      <p id="venueAddress"></p>
+      <figure class="map-card reveal">
+        <img src="assets/images/map.svg" alt="Sơ đồ làng Kim Thượng: nhà cô dâu (tiệc tại gia) và nhà văn hóa cuối làng (tiệc nhà chú rể) cách nhau 2 con ngõ; đường từ Hà Nội và Từ Sơn, Bắc Ninh" loading="lazy">
+        <a id="mapsLink" class="map-btn" target="_blank" rel="noopener">CHỈ ĐƯỜNG — GOOGLE MAPS</a>
+      </figure>
+      <a id="osmLink" class="map-link" target="_blank" rel="noopener">Mở bản đồ lớn ↗</a>
+    </section>
+
+    <section class="timeline section reveal">
+      <div class="section-heading"><span>SCHEDULE</span><h3>Lịch trình ngày cưới</h3></div>
+	<p>Tiệc cưới</p>
+      <ol>
+        <li><time>16:00</time><span>Đón khách</span></li>
+        <li><time>16:30</time><span>Khai tiệc</span></li>
+        <li><time>17:00</time><span>Rót rượu</span></li>
+        <li><time>17:00</time><span>Phục vụ món chính</span></li>
+        <li><time>22:00</time><span>Kết thúc tiệc</span></li>
+      </ol>
+	<p>Ngày cưới</p>
+      <ol>
+	<li><time>10:00</time><span>Lễ vu quy</span></li>
+	<li><time>12:00</time><span>Lễ thành hôn</span></li>
+      </ol>
+    </section>
+
+    <section class="guestbook section reveal">
+      <div class="section-heading"><span>GUESTBOOK</span><h3>Sổ lưu bút</h3></div>
+      <form id="wishForm" class="form-card">
+        <input class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input required name="name" placeholder="Nhập tên của bạn *">
+        <textarea required name="message" rows="4" placeholder="Gửi lời chúc"></textarea>
+        <button type="submit">GỬI LỜI CHÚC</button>
+      </form>
+      <div id="wishes" class="wishes"></div>
+    </section>
+
+    <section class="gift section reveal">
+      <div class="section-heading"><span>WITH LOVE</span><h3>Hộp Quà Mừng</h3></div>
+      <button class="blackhole" id="giftOpen" aria-label="Chạm để mở hộp quà">
+        <span class="bh-glow"></span>
+        <span class="bh-tilt bh-tilt-back"><span class="bh-disk"></span></span>
+        <span class="bh-core"></span>
+        <span class="bh-tilt bh-tilt-front"><span class="bh-disk"></span></span>
+      </button>
+      <p class="gift-hint">✦✦✦✦<br>Chạm vào hố đen để mở quà</p>
+    </section>
+
+    <footer class="footer section">
+      <div class="stars" aria-hidden="true">
+        <i style="left:10%;top:26%;--t:3s;--d:.4s"></i>
+        <i style="left:24%;top:60%;--t:2.7s;--d:1.3s"></i>
+        <i style="left:38%;top:20%;--t:3.5s;--d:.8s"></i>
+        <i style="left:55%;top:70%;--t:2.6s;--d:1.9s"></i>
+        <i style="left:66%;top:32%;--t:3.2s;--d:.2s"></i>
+        <i style="left:80%;top:58%;--t:2.9s;--d:1.5s"></i>
+        <i style="left:90%;top:24%;--t:3.7s;--d:.9s"></i>
+        <i class="shooting-star" style="--sd:6s"></i>
+      </div>
+      <div class="footer-flower"></div>
+      <p>Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!</p>
+      <h2><span id="footerBride"></span> &amp; <span id="footerGroom"></span></h2>
+      <small>29.11.2026</small>
+    </footer>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Đóng">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Ảnh trước">‹</button>
+    <img id="lightboxImage" alt="Ảnh cưới">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Ảnh sau">›</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <div class="gift-modal" id="giftModal">
+    <button class="modal-close" id="giftClose">×</button>
+    <h3>Hộp Quà Mừng</h3>
+    <div class="gift-grid">
+      <div class="bank-card"><h4>Chú Rể — <span id="giftGroom"></span></h4><img id="qrGroom" class="qr-zoom" alt="QR chú rể — chạm để phóng to" title="Chạm để phóng to"><p id="bankGroom"></p><span class="qr-hint">Chạm ảnh để phóng to &amp; tải về</span></div>
+      <div class="bank-card"><h4>Cô Dâu — <span id="giftBride"></span></h4><img id="qrBride" class="qr-zoom" alt="QR cô dâu — chạm để phóng to" title="Chạm để phóng to"><p id="bankBride"></p><span class="qr-hint">Chạm ảnh để phóng to &amp; tải về</span></div>
+    </div>
+  </div>
+
+  <div class="qr-viewer" id="qrViewer" role="dialog" aria-modal="true" aria-label="Mã QR phóng to">
+    <button class="modal-close" id="qrViewerClose" aria-label="Đóng">×</button>
+    <figure class="qr-viewer-card">
+      <figcaption id="qrViewerTitle"></figcaption>
+      <img id="qrViewerImage" alt="Mã QR phóng to">
+      <p class="qr-viewer-tip">Mở ứng dụng ngân hàng và quét mã này để chuyển khoản</p>
+      <button class="qr-download" id="qrViewerDownload" type="button">
+        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3v10m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Tải ảnh QR
+      </button>
+      <p class="qr-viewer-tip qr-fallback-tip">Nếu không tải được, nhấn giữ vào ảnh QR để lưu về máy</p>
+    </figure>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
