@@ -20,7 +20,7 @@ const WEDDING_CONFIG = {
 
   date: {
     iso: "2026-11-29T16:00:00+07:00",
-    display: "28/11/2026",
+    display: "29/11/2026",
     dayTiec: "THỨ BẢY",
     dayTiecNumber:"28",
     day: "CHỦ NHẬT",    	
